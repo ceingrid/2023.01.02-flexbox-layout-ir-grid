@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary:black;
+    --color-secondary:blue;
+    --font-family: 'Roboto', sans-serif;
+}
+
+.h1 {
+    color: var(--color-primary);
+}
+
+.a {
+    color: var(--color-primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2.5fr 2.5fr;
+    gap: 10px;
+}
+
+.shops-section-title {
+    grid-area: 1 / 1 / 2 / 2 ;
+}
+
+.shops1 {
+    grid-area: 2 / 1 / 3 / 2 ;
+}
+
+.shops2 {
+    grid-area: 2 / 2 / 3 / 3 ;
+}
+
+.shops3 {
+    grid-area: 3 / 1 / 4 / 3 ;
+}
+
+.shops4 {
+    grid-area: 3 / 2 / 4 / 3 ;
+}
+
+.map {
+    grid-area: 1 / 2 / 2 / 3 ;
+    
+}
